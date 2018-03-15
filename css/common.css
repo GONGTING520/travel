@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.center {
+    width: 1180px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 0 60px;
+    height: 65px;
+}
+
+.header .logo {
+    float: left;
+}
+
+.header .login {
+    float: right;
+}
+
+.nav {
+    height: 40px;
+    background-color: #2577e3;
+    margin-bottom: 34px;
+}
+
+.nav ul{
+    height: 100%;
+}
+
+.nav li {
+    float: left;
+    height: 100%;
+    line-height: 40px;
+}
+
+.nav a {
+    padding: 5px 10px;
+    color: #fff;
+}
