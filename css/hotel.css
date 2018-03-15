@@ -1,0 +1,48 @@
+.select-info {
+    width: 340px;
+    float: left;
+}
+
+.slideshow {
+    float: right;
+    position: relative;
+    width: 780px;
+    height: 235px;
+}
+
+.slideshow .img li {
+    width: 780px;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.slideshow .img .selected {
+    opacity: 1;
+}
+
+.slideshow img {
+    width: 100%;
+}
+
+.slideshow .index {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.slideshow .index li {
+    color: transparent;
+    border: 2px solid #fff;
+    background-color: #0ab0e8;
+    border-radius: 11px;
+    float: left;
+    width: 11px;
+    height: 11px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.slideshow .index .selected {
+    background-color: #f8cd47;
+}
