@@ -1,10 +1,93 @@
-.select-info {
-    width: 340px;
+.left {
+    width: 380px;
     float: left;
 }
 
-.slideshow {
+.right {
     float: right;
+}
+
+.searchInputBorder {
+    border-radius: 5px;
+    background-color: #3983E5;
+    padding: 6px;
+}
+
+.searchInputBorder b {
+    float: left;
+    width: 18px;
+    height: 13px;
+    margin: 13px 10px 0 10px;
+    background-image: url(../img/spring.png);
+    background-position: -48px -108px;
+}
+
+.searchInputBorder h2 {
+    float: left;
+    height: 43px;
+    line-height: 43px;
+    color: #fff;
+}
+
+.select-info {
+    text-align: right;
+    background-color: #fff;
+    padding: 10px 6px 20px 6px;
+    border-radius: 5px;
+}
+
+/*输入信息部分开始*/
+
+.select-info .switchSearch label {
+    display: block;
+    margin: 10px;
+}
+
+.select-info .switchSearch .single {
+    display: inline;
+}
+
+.select-info .switchSearch .single input {
+    width: 90px;
+}
+
+.select-info .switchSearch select {
+    height: 28px;
+    border-color: #bbb #ddd #ddd #bbb;
+}
+
+.switchSearch select[name="level"] {
+    width: 232px;
+    padding-left: 3px;
+    border-width: 1px;
+}
+
+.switchSearch input {
+    padding-left: 3px;
+    border-color: #bbb #ddd #ddd #bbb;
+    border-style: solid;
+    border-width: 1px;
+    height: 28px;
+    width: 227px;
+}
+
+/*输入信息部分结束*/
+
+.select-info input[name="sub"] {
+    width: 232px;
+    margin-right: 10px;
+    text-shadow: 1px 1px 0 #CF7000;
+    background-color: #ffb000;
+    border: solid 1px #E77C00;
+    height: 33px;
+    color: #fff;
+    font-weight: bolder;
+    cursor: pointer;
+    box-shadow: 0 1px 0 rgba(95, 50, 0, 0.7);
+    border-radius: 3px;
+}
+
+.slideshow {
     position: relative;
     width: 780px;
     height: 235px;
@@ -46,3 +129,73 @@
 .slideshow .index .selected {
     background-color: #f8cd47;
 }
+
+/* 合作方部分开始 */
+
+.cooperator {
+    margin-top: 20px;
+}
+
+.cooperator h2 {
+    padding: 20px 0;
+    color: #5599dd;
+}
+
+.cooperator a {
+    display: block;
+    height: 63px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: 1px solid #c4e3ea;
+    border-radius: 3px;
+}
+
+.cooperator a:hover {
+    border-color: #06C;
+}
+
+/* 合作方部分结束 */
+
+/* 热门酒店部分开始 */
+
+.hot-hotel h2 {
+    position: relative;
+    height: 50px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #5599dd;
+    font: 28px/58px "Microsoft Yahei";
+    color: #5599dd;
+}
+
+.hot-hotel .city-list {
+    position: absolute;
+    margin: -37px 0 0 128px;
+}
+
+.hot-hotel .city-list li {
+    float: left;
+    padding: 2px 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.hot-hotel .city-list .selected::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -4px;
+    border-width: 4px;
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent #5599DD transparent;
+}
+
+.hot-hotel .city-list li:hover {
+    background-color: #0066cc;
+    color: #FFF;
+}
+
+/* 热门酒店部分结束 */
