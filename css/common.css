@@ -26,6 +26,7 @@ li {
 .header {
     padding: 0 60px;
     height: 65px;
+    line-height: 65px;
 }
 
 .header .logo {
@@ -39,10 +40,14 @@ li {
 .nav {
     height: 40px;
     background-color: #2577e3;
-    margin-bottom: 34px;
+    margin-bottom: 24px;
 }
 
-.nav ul{
+.nav .selected {
+    background: #0a56bb;
+}
+
+.nav ul {
     height: 100%;
 }
 
