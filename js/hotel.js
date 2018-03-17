@@ -47,4 +47,20 @@ $(function () {
     $('.hot-hotel .city-list li').on('click', function () {
         $(this).addClass('selected').siblings().removeClass('selected');
     });
+
+    // 回到顶部
+    var $top = $('.top');
+    $(window).on('scroll', function () {
+        var iTop = document.body.scrollTop || document.documentElement.scrollTop;
+        if (iTop >= 400) {
+            $top.fadeIn();
+        } else {
+            $top.fadeOut();
+        }
+    });
+    $top.on('click', function () {
+        $('body, html').animate({
+            scrollTop: 0
+        }, 1000);
+    });
 });
