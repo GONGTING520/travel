@@ -1,0 +1,67 @@
+body {
+    background: url(../img/suggest-bg.png) #fff repeat-x;
+}
+
+.suggest-logo {
+    width: 914px;
+    height: 53px;
+    margin: 10px auto 20px;
+    background: url(../img/suggest-logo.png) no-repeat left;
+}
+
+.main {
+    width: 914px;
+    min-height: 441px;
+    _height: 441px;
+    margin: 10px auto 8px;
+    padding: 20px 20px 0;
+    background: url(../img/suggest-main-bg.png) no-repeat;
+}
+
+.main .table-style td {
+    vertical-align: top;
+    padding: 15px 4px;
+}
+
+.main .table-style th {
+    text-align: right;
+    color: #333;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.main .table-style .vtop {
+    vertical-align: top;
+    padding: 15px 0;
+}
+
+.main .table-style input {
+    height: 23px;
+    line-height: 23px;
+    border: 1px solid #b4b4b4;
+    box-shadow: 1px 1px 3px #ddd inset;
+}
+
+.main .table-style input[type="radio"] {
+    box-shadow: none;
+}
+
+.main .table-style .tabl-style-textarea {
+    resize: none;
+}
+
+.main .sub {
+    display: block;
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    padding-bottom: 1px;
+    padding-top: 4px;
+    border: 0 none;
+    text-align: center;
+    cursor: pointer;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 auto;
+}
