@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册登陆</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="container">
+        <ul class="index">
+            <li class="selected" value="1">登陆</li>
+            <li value="0">注册</li>
+        </ul>
+        <form action="" method="" class="login" id="login">
+            账号登录
+            <input type="text" placeholder="用户名/手机号">
+            <input type="text" placeholder="登陆密码">
+            <input type="submit" value="登  陆" name="sub" class="sub"> 其他登陆方式：
+            <span class="wechat"></span>
+        </form>
+        <form action="" method="" class="regist" id="regist">
+            注册帐号
+            <input type="text" placeholder="用户名/手机号">
+            <input type="text" placeholder="登陆密码">
+            <input type="text" placeholder="确认密码">
+            <input type="submit" value="注  册" name="sub" class="sub">
+        </form>
+    </div>
+
+    <script>
+        var login = document.getElementById('login');
+        var regist = document.getElementById('regist');
+        var aLis = document.querySelectorAll('li');
+        // 如果传入的id为0，则表示显示注册页面，否则默认显示登陆界面
+        if (location.search.substr(-1) == 0) {
+            aLis[0].className = '';
+            aLis[1].className = 'selected';
+            regist.style.display = 'block';
+            login.style.display = 'none';
+        }
+    </script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
