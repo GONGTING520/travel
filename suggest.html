@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户体验平台</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/suggest.css">
+</head>
+
+<body>
+    <!-- logo标题 -->
+    <div class="suggest-logo"></div>
+    <div class="main">
+        <h3 class="tit-suggest">我要提建议:</h3>
+        <form action="" method="">
+            <table class="table-style">
+                <tr>
+                    <th>问题分类：</th>
+                    <td>
+                        <select name="classify" style="width:240px;">
+                            <option value="hotel">酒店</option>
+                            <option value="travel">旅游景点</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="vtop">内容：</th>
+                    <td>
+                        <textarea cols="50" rows="10" class="tabl-style-textarea" placeholder="请尽量详尽描述您的建议。比如具体步骤和链接。" name="suggest"></textarea>
+                    </td>
+                </tr>
+                <tr id="tr-name">
+                    <th>登录名：</th>
+                    <td>
+                        <input name="name" class="username" style="width:240px;" type="text" value="" maxlength="50" />
+                    </td>
+                </tr>
+                <tr id="tr-contract">
+                    <th>联系方式：</th>
+                    <td>
+                        <input value="m" type="radio" name="contract" checked="checked">手机
+                        <input value="e" type="radio" name="contract">邮箱
+                        <div style="height:5px;"></div>
+                        <input name="connection" class="phone" style="width:240px;" type="text" maxlength="50" />
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" name="sub" class="sub" value="确认提交" />            
+        </form>
+    </div>
+</body>
+
+</html>
