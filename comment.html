@@ -1,0 +1,182 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>评论</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/comment.css">
+</head>
+<body>
+    <!-- logo标题 -->
+    <div class="header center clearfix">
+        <div class="logo"></div>旅游网
+        <div class="login">
+            <a href="./login.html?id=1">登陆</a>|<a href="./login.html?id=0">注册</a>
+        </div>
+        <div class="user visible">
+            <a href="./order-center.html">xx</a>
+            <a href="./recommend.html" class="out">退出</a>
+        </div>
+    </div>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <ul class="center clearfix">
+            <!-- <li><a href="./recommend.html">推荐路线</a></li> -->
+            <li class="selected"><a href="./hotel.html">酒店</a></li>
+            <li><a href="#">旅游景点</a></li>
+        </ul>
+    </div>
+    <!-- 评论部分 -->
+    <div class="container">
+        <div class="center">
+            <div class="left">
+                <div class="hotel-comment-which clearfix">
+                    <img src="img/bg_nopic1.png">
+                    <h4 class="title">xx酒店</h4>
+                </div>
+                <form action="" method="">
+                    <table class="comment-table">
+                        <tbody>
+                            <!-- 总体评价 -->
+                            <tr>
+                                <th>总体评价</th>
+                                <td>
+                                    <ul class="sum-comment">
+                                        <li>
+                                            <span class="position">位置</span>
+                                            <select name="positon-comment">
+                                                <option value="1">1分/很差</option>
+                                                <option value="2">2分/较差</option>
+                                                <option value="3">3分/一般</option>
+                                                <option value="4">4分/较好</option>
+                                                <option value="5">5分/很好</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <span class="toilet">卫生</span>
+                                            <select name="toilet-comment">
+                                                <option value="1">1分/很差</option>
+                                                <option value="2">2分/较差</option>
+                                                <option value="3">3分/一般</option>
+                                                <option value="4">4分/较好</option>
+                                                <option value="5">5分/很好</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <span class="service">服务</span>
+                                            <select name="service-comment">
+                                                <option value="1">1分/很差</option>
+                                                <option value="2">2分/较差</option>
+                                                <option value="3">3分/一般</option>
+                                                <option value="4">4分/较好</option>
+                                                <option value="5">5分/很好</option>
+                                            </select>
+                                        </li>
+                                        <li>
+                                            <span class="facilities">设施</span>
+                                            <select name="facilities-comment">
+                                                <option value="1">1分/很差</option>
+                                                <option value="2">2分/较差</option>
+                                                <option value="3">3分/一般</option>
+                                                <option value="4">4分/较好</option>
+                                                <option value="5">5分/很好</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <!-- 点评内容 -->
+                            <tr>
+                                <th>点评内容</th>
+                                <td>
+                                    <textarea name="comment-content" placeholder="您可以聊聊酒店位置、服务、设施、环境卫生等方面的真实体验。所有真实有效的评价都会被显示。" class="comment-content"></textarea>
+                                    <div class="input-tip">寥寥几字，积分唾手可得</div>
+                                </td>
+                            </tr>
+                            <!-- 优点不足 -->
+                            <tr>
+                                <th>优点不足<br>(选填)</th>
+                                <td>
+                                    <ul class="good-bad clearfix">
+                                        <li>
+                                            <p>优点</p>
+                                            <input type="text" placeholder="用简短的一句话概括优点" maxlength="30">
+                                        </li>
+                                        <li>
+                                            <p>不足</p>      
+                                            <input type="text" placeholder="用简短的一句话概括不足" maxlength="30">                                                                                  
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <input type="submit" name="sub" class="sub" value="发表点评">                           
+                </form>
+            </div>
+            <div class="right">
+                <div class="content">
+                    <h3 class="title">来自其他用户的点评</h3>
+                    <ul class="comments">
+                        <li>
+                            <div class="user-info">
+                                <img src="img/user.jpg">
+                                <div class="comment-user">
+                                    <h3 class="username">M261553****</h3>
+                                    <p class="room-type">大床房B</p>
+                                </div>
+                            </div>
+                            <p class="comment-text">我们住的一楼，很潮湿。但是酒店地理位置好，临着地铁一号线定安路，出行方便。离南宋御街也比较近，地理位置是优势。</p>
+                        </li>
+                        <li>
+                            <div class="user-info">
+                                <img src="img/user.jpg">
+                                <div class="comment-user">
+                                    <h3 class="username">M261553****</h3>
+                                    <p class="room-type">大床房B</p>
+                                </div>
+                            </div>
+                            <p class="comment-text">我们住的一楼，很潮湿。但是酒店地理位置好，临着地铁一号线定安路，出行方便。离南宋御街也比较近，地理位置是优势。</p>
+                        </li>
+                        <li>
+                            <div class="user-info">
+                                <img src="img/user.jpg">
+                                <div class="comment-user">
+                                    <h3 class="username">M261553****</h3>
+                                    <p class="room-type">大床房B</p>
+                                </div>
+                            </div>
+                            <p class="comment-text">我们住的一楼，很潮湿。但是酒店地理位置好，临着地铁一号线定安路，出行方便。离南宋御街也比较近，地理位置是优势。</p>
+                        </li>
+                    </ul>
+                    <div class="how-to-write-word">
+                        如何写好一篇优质点评？
+                        <div class="hover-tips">
+                            <strong>您可以在点评中：</strong><br>
+                            描述您在酒店中体验到的服务<br>
+                            告诉我们您对房间的体验<br>
+                            评价一下位置和设施<br>
+                            上传真实拍摄的酒店照片<br>
+                            说说酒店的优点和缺点<br><br>
+                            <strong>您不可以在点评中：</strong><br>
+                            发表辱骂、威胁或人身攻击的内容<br>
+                            复制他人的点评内容<br>
+                            杜撰虚假的入住体验<br>
+                            发布商业用途的联系信息<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 回到顶部和提建议 -->
+    <div class="top-suggest">
+        <div class="top"></div>
+        <a href="./suggest.html" class="suggest">建议反馈</a>
+    </div>
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>
