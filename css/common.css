@@ -23,6 +23,8 @@ li {
     margin: 0 auto;
 }
 
+/* logo部分开始 */
+
 .header {
     padding: 0 60px;
     height: 65px;
@@ -36,6 +38,10 @@ li {
 .header .login {
     float: right;
 }
+
+/* logo部分结束 */
+
+/* 导航部分开始 */
 
 .nav {
     height: 40px;
@@ -61,3 +67,26 @@ li {
     padding: 5px 10px;
     color: #fff;
 }
+
+/* 导航部分结束 */
+
+/* 回到顶部开始 */
+
+.top {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 5px;
+    width: 35px;
+    padding-top: 35px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 2;
+    background: url(../img/top-spring.png) no-repeat;
+}
+
+.top:hover{
+    background-position: right top;
+}
+
+/* 回到顶部结束 */
