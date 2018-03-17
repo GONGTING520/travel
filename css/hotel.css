@@ -158,7 +158,7 @@
 
 /* 热门酒店部分开始 */
 
-.hot-hotel h2 {
+.hot-hotel .hot-sold-title {
     position: relative;
     height: 50px;
     margin-bottom: 10px;
@@ -166,6 +166,18 @@
     font: 28px/58px "Microsoft Yahei";
     color: #5599dd;
 }
+
+.hot-hotel .hot-sold-title .bg {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    width: 189px;
+    height: 44px;
+    background: url(../img/spring.png) no-repeat;
+    background-position: 0 -164px;
+}
+
+/* 酒店部分的导航列表 */
 
 .hot-hotel .city-list {
     position: absolute;
@@ -177,6 +189,11 @@
     padding: 2px 5px;
     cursor: pointer;
     position: relative;
+}
+
+.hot-hotel .city-list li:hover {
+    background-color: #0066cc;
+    color: #FFF;
 }
 
 .hot-hotel .city-list .selected::after {
@@ -193,9 +210,104 @@
     border-color: transparent transparent #5599DD transparent;
 }
 
-.hot-hotel .city-list li:hover {
-    background-color: #0066cc;
-    color: #FFF;
+/* 设置每一个li的样式 */
+
+.content .hotel-info {
+    padding: 10px 0;
+    border-bottom: 1px dotted #DDD;
+    display: flex;
+}
+
+.content .hotel-info:hover {
+    background-color: #E8F4FF;
+}
+
+/* 酒店图片 */
+
+.hotel-info .hotel-pic img {
+    height: 130px;
+    width: 130px;
+    border-width: 0px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* 酒店信息部分 */
+
+.hotel-info .hotel-info-name {
+    flex-grow: 5;
+}
+
+.hotel-info .hotel-info-name .hotel-title {
+    color: #06C;
+    /* display: inline;
+    margin-right: 5px; */
+    vertical-align: middle;
+    font: bold 14px Simsun;
+}
+
+.hotel-info .hotel-info-name .hotel-title:hover {
+    text-decoration: underline;
+}
+
+.hotel-info-name .hotel-zone {
+    margin: 10px 0 5px 0;
+}
+
+.hotel-info-name .hotel-zone a {
+    font-size: 12px;
+    margin-right: 10px;
+    color: #333;
+    text-decoration: underline;
+}
+
+.hotel-info-name .hotel-score {
+    color: #333;
+    font-size: 12px;
+}
+
+.hotel-info-name .hotel-score:hover {
+    text-decoration: underline;
+}
+
+.hotel-info-name .hotel-comment {
+    margin-top: 10px;
+    color: #999;
+}
+
+.hotel-info-name .hotel-comment span {
+    max-height: 36px;
+    line-height: 18px;
+    font-size: 12px;
+    font-family: Simsun;
+    overflow: hidden;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+/* 右侧价格部分 */
+
+.hotel-info .hotel-price {
+    flex-grow: 2;
+    text-align: right;
+    color: #F60;
+    margin-top: 5px;
+}
+
+.hotel-info .hotel-price .price-icon {
+    color: #333;
+    font: 12px Arial;
+    vertical-align: 8px;
+}
+
+.hotel-info .hotel-price .price {
+    margin-right: 5px;
+    font: normal 24px Tahoma;
+}
+
+.hotel-info .hotel-price .price-word {
+    font-size: 12px;
 }
 
 /* 热门酒店部分结束 */
