@@ -49,7 +49,7 @@ $(function () {
     });
 
     // 回到顶部
-    var $top = $('.top');
+    var $top = $('.top-suggest .top');
     $(window).on('scroll', function () {
         var iTop = document.body.scrollTop || document.documentElement.scrollTop;
         if (iTop >= 400) {

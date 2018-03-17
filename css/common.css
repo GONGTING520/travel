@@ -29,10 +29,15 @@ li {
     padding: 0 60px;
     height: 65px;
     line-height: 65px;
+    color: #2577e3;
+    font-weight: bold;
 }
 
 .header .logo {
     float: left;
+    background: url(../img/logo.png) no-repeat center;
+    width: 47px;
+    height: 100%;
 }
 
 .header .login {
@@ -72,12 +77,16 @@ li {
 
 /* 回到顶部开始 */
 
-.top {
-    display: none;
+.top-suggest {
     position: fixed;
     bottom: 50px;
     right: 5px;
     width: 35px;
+}
+
+.top-suggest .top {
+    display: none;
+    width: 100%;
     padding-top: 35px;
     overflow: hidden;
     cursor: pointer;
@@ -85,8 +94,24 @@ li {
     background: url(../img/top-spring.png) no-repeat;
 }
 
-.top:hover{
+.top-suggest .top:hover {
     background-position: right top;
+}
+
+.top-suggest .suggest {
+    display: block;
+    font-size: 12px;
+    color: #fff;
+    height: 32px;
+    margin-top: 1px;
+    padding-top: 3px;
+    text-align: center;
+    cursor: pointer;
+    background: url(../img/top-spring.png) no-repeat bottom left;
+}
+
+.top-suggest .suggest:hover {
+    background-position: bottom right;
 }
 
 /* 回到顶部结束 */
