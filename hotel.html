@@ -10,31 +10,36 @@
 </head>
 <body>
     <!-- logo标题 -->
-    <div class="header clearfix">
-        <div class="logo">xx.jpg</div>
-        <div class="login">
-            <a href="#">登陆</a>|<a href="#">注册</a>
+    <div class="header center clearfix">
+        <div class="logo"></div>旅游网
+        <div class="login visible">
+            <a href="./login.html?id=1">登陆</a>|<a href="./login.html?id=0">注册</a>
+        </div>
+        <div class="user">
+            <a href="./order-center.html">xx</a>
+            <a href="./recommend.html" class="out">退出</a>
         </div>
     </div>
     <!-- 导航栏 -->
     <div class="nav">
         <ul class="center clearfix">
-            <li><a href="#">首页</a></li>
-            <li><a href="#">旅游</a></li>
+            <!-- <li><a href="./recommend.html">推荐路线</a></li> -->
             <li class="selected"><a href="#">酒店</a></li>
+            <li><a href="#">旅游景点</a></li>
+            <li><a href="./order-center.html">个人中心</a></li>
         </ul>
     </div>
     <!-- 内容部分 -->
     <div class="center clearfix">
         <div class="left">
             <!-- 搜索部分 -->
-            <div class="searchInputBorder">
+            <div class="search-input-border">
                 <div class="clearfix">
                     <b></b>
                     <h2>搜索国内酒店</h2>
                 </div>
                 <form action="" method="" class="select-info">
-                    <div class="switchSearch">
+                    <div class="switch-search">
                         <label>目的地&nbsp;<input type="text" name="destination"></label>
                         <label>入住日期&nbsp;<input type="date" name="datein" id="datein"></label>
                         <label>退房日期&nbsp;<input type="date" name="dateout" id="dateout"></label>
@@ -225,11 +230,15 @@
             </div>
         </div>
     </div>
-    <!-- 回到顶部 -->
-    <div class="top"></div>
+    <!-- 回到顶部和提建议 -->
+    <div class="top-suggest">
+        <div class="top"></div>
+        <a href="./suggest.html" class="suggest">建议反馈</a>
+    </div>
 
 
     <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/common.js"></script>
     <script src="js/hotel.js"></script>
 </body>
 </html>
