@@ -7,13 +7,13 @@
     float: right;
 }
 
-.searchInputBorder {
+.search-input-border {
     border-radius: 5px;
     background-color: #3983E5;
     padding: 6px;
 }
 
-.searchInputBorder b {
+.search-input-border b {
     float: left;
     width: 18px;
     height: 13px;
@@ -22,7 +22,7 @@
     background-position: -48px -108px;
 }
 
-.searchInputBorder h2 {
+.search-input-border h2 {
     float: left;
     height: 43px;
     line-height: 43px;
@@ -38,31 +38,31 @@
 
 /*输入信息部分开始*/
 
-.select-info .switchSearch label {
+.select-info .switch-search label {
     display: block;
     margin: 10px;
 }
 
-.select-info .switchSearch .single {
+.select-info .switch-search .single {
     display: inline;
 }
 
-.select-info .switchSearch .single input {
+.select-info .switch-search .single input {
     width: 90px;
 }
 
-.select-info .switchSearch select {
+.select-info .switch-search select {
     height: 28px;
     border-color: #bbb #ddd #ddd #bbb;
 }
 
-.switchSearch select[name="level"] {
+.switch-search select[name="level"] {
     width: 232px;
     padding-left: 3px;
     border-width: 1px;
 }
 
-.switchSearch input {
+.switch-search input {
     padding-left: 3px;
     border-color: #bbb #ddd #ddd #bbb;
     border-style: solid;
