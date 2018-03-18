@@ -1,0 +1,221 @@
+.nav {
+    margin-bottom: 0;
+}
+
+.container {
+    background: #f4f4f4;
+}
+
+.container .center {
+    display: flex;
+    padding: 30px 0;
+}
+
+/* 留言板左侧部分开始 */
+
+.container .left {
+    flex-grow: 3;
+    margin-right: 20px;
+    width: 0;
+}
+
+.left .hotel-comment-which {
+    position: relative;
+    padding: 5px 34px;
+    margin-bottom: 10px;
+    background-color: #FFF;
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: Tahoma, Simsun, sans-serif;
+    color: #333;
+}
+
+.left .hotel-comment-which img {
+    float: left;
+    width: 75px;
+    height: 75px;
+}
+
+.left .hotel-comment-which .title {
+    margin: 12px 0 6px;
+    font-size: 14px;
+    padding-left: 90px;
+    font-weight: bold;
+}
+
+/* 总体评价部分 */
+
+.comment-table {
+    width: 100%;
+}
+
+.comment-table .sum-comment select {
+    width: 300px;
+    height: 30px;
+}
+
+.comment-table .sum-comment li {
+    margin-bottom: 10px;
+}
+
+.comment-table th {
+    width: 100px;
+    padding-top: 10px;
+    border-right: 1px dashed #ddd;
+    border-bottom: 5px solid #f4f4f4;
+    background-color: #fbfbfb;
+    color: #666;
+    text-align: center;
+    font-family: microsoft yahei;
+    font-size: 16px;
+    font-weight: normal;
+    vertical-align: top;
+}
+
+.comment-table td {
+    padding: 16px;
+    border-bottom: 5px solid #f4f4f4;
+    background-color: #fff;
+}
+
+/* 点评内容部分 */
+
+.comment-table .comment-content {
+    display: block;
+    width: 99%;
+    height: 170px;
+    padding: 4px 4px 26px;
+    border: 1px solid #BBB;
+    overflow: auto;
+    resize: none;
+}
+
+.comment-table .input-tip {
+    float: left;
+    line-height: 24px;
+    color: #999;
+    font-size: 12px;
+}
+
+.comment-table .good-bad li {
+    float: left;
+    width: 40%;
+}
+
+.comment-table .good-bad li p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.comment-table .good-bad li input {
+    border: 1px solid #ccc;
+    padding: 4px;
+    height: 28px;
+    width: 210px;
+}
+
+.left .sub {
+    width: 218px;
+    height: 37px;
+    margin: 20px 0 40px 116px;
+    border: 1px solid #e77c00;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Microsoft Yahei", Simsun, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ffb000;
+    text-align: center;
+    box-shadow: 0 1px 0 rgba(153, 153, 153, 0.7);
+    outline: none;
+}
+
+.left .sub:hover {
+    background-color: #f79700;
+    border-color: #de7800;
+}
+
+/* 留言板左侧部分结束 */
+
+/* 留言板右侧部分开始 */
+
+.container .right {
+    flex-grow: 1;
+    width: 0;
+}
+
+.container .right .content {
+    background: #fff;
+}
+
+.right .title {
+    font-size: 16px;
+    font-family: "microsoft yahei";
+    padding-left: 10px;
+    font-weight: normal;
+    line-height: 30px;
+}
+
+.right .comments li {
+    padding: 20px 0;
+    margin: 0 10px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.right .user-info img {
+    float: left;
+    width: 35px;
+    height: 35px;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.right .user-info .comment-user {
+    position: relative;
+    padding-left: 51px;
+    min-height: 41px;
+    height: 41px;
+    margin-bottom: 5px;
+}
+
+.right .comment-user .username,
+.right .comment-text {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.right .comment-user .room-type {
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: Tahoma, Simsun, sans-serif;
+    color: #333;
+}
+
+.right .how-to-write-word {
+    line-height: 40px;
+    font-size: 14px;
+    padding: 0 10px;
+    color: #06c;
+    cursor: pointer;
+    position: relative;
+}
+
+.right .how-to-write-word:hover .hover-tips {
+    display: block;
+}
+
+.right .hover-tips {
+    position: absolute;
+    border: 1px solid #67A1E2;
+    padding: 10px;
+    color: #333;
+    width: 190px;
+    line-height: 1.6;
+    font-size: 12px;
+    display: none;
+    background-color: #fff;
+}
+
+/* 留言板右侧部分结束 */
