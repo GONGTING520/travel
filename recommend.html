@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>定制路线</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/order-center.css">
+    <link rel="stylesheet" href="css/recommend.css">
+</head>
+<body>
+    <!-- logo标题 -->
+    <div class="header center clearfix">
+        <div class="logo"></div>旅游网
+        <div class="user visible">
+            <a href="./order-center.html">xx</a>
+            <a href="./recommend.html" class="out">退出</a>
+        </div>
+    </div>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <ul class="center clearfix">
+            <!-- <li class="selected"><a href="#">推荐路线</a></li> -->
+            <li><a href="./hotel.html">酒店</a></li>
+            <li><a href="#">旅游景点</a></li>
+        </ul>
+    </div>
+    <!-- 内容部分 -->
+    <div class="container center">
+        <!-- 左侧订单菜单 -->
+        <div class="left">
+            <div class="list">
+                <p class="title">订单</p>
+                <ul class="order">
+                    <li><a href="./order-center.html?id=0">全部订单</a></li>
+                    <li><a href="./order-center.html?id=1">酒店订单</a></li>
+                    <li><a href="./order-center.html?id=2">旅游景点订单</a></li>
+                </ul>
+                <p class="title">路线</p>
+                <ul class="travel-way">
+                    <li class="selected"><a href="./recommend.html">定制路线</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 右侧定制行程部分 -->
+        <div class="right">
+            <!-- 左侧添加行程 -->
+            <div class="order-travel">
+                <h2 class="title">添加行程</h2>
+                <div class="add-travel">
+                    <form action="" method="" class="select-info">
+                        <div class="travel-info">
+                            <label>行程地点&nbsp;<input type="text" name="travel-position" placeholder="请输入您的行程地点"></label>
+                            <label>行程日期&nbsp;<input type="date" name="travel-date"></label>
+                            <label>酒店名称&nbsp;<input type="date" name="travel-hotel"></label>
+                            <label class="add-recode">添加备忘&nbsp;<textarea name="travel-recode" placeholder="请输入您的行程备忘" class="travel-recode" cols="26" rows="4"></textarea></label>
+                        </div>
+                        <input type="submit" name="sub" class="sub" value="添  加">
+                    </form>
+                </div>
+            </div>
+            <!-- 右侧显示行程 -->
+            <div class="show-travel">
+                <h3>定制行程详情：</h3>
+                <ul class="details">
+                    <li>
+                        <p class="name">索菲亚大教堂&nbsp;<span class="date">2017-08-26</span></p>
+                        <div class="content">
+                            今日备忘：<p class="tips">上午可乘公交到哈一百货时装大厦下车去看圣索菲亚大教堂，先来一睹冰城标志性建筑的宏伟，进到教堂里边更可感受到欧式穹顶建筑的壮观。之后步行到中央大街来看看欧式建筑、尝尝各种美食，中午可以在这里找一家喜欢的西餐厅吃一顿俄式大餐。走到中央大街的北面尽头就可以看到防洪纪念塔。然后去松花江畔，如果正值冰封季节，可以看到人们在江面上行走或滑冰，你也可以参与其中，或是在江畔的斯大林公园逛逛。</p>
+                            <p class="hotel">
+                                <span>今日入住酒店：</span>
+                                <span class="hotel-name">xx酒店</span>
+                            </p>
+                            <div class="map">
+                                map
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="name">索菲亚大教堂&nbsp;<span class="date">2017-08-26</span></p>
+                        <div class="content">
+                            今日备忘：<p class="tips">上午可乘公交到哈一百货时装大厦下车去看圣索菲亚大教堂，先来一睹冰城标志性建筑的宏伟，进到教堂里边更可感受到欧式穹顶建筑的壮观。之后步行到中央大街来看看欧式建筑、尝尝各种美食，中午可以在这里找一家喜欢的西餐厅吃一顿俄式大餐。走到中央大街的北面尽头就可以看到防洪纪念塔。然后去松花江畔，如果正值冰封季节，可以看到人们在江面上行走或滑冰，你也可以参与其中，或是在江畔的斯大林公园逛逛。</p>
+                            <p class="hotel">
+                                <span>今日入住酒店：</span>
+                                <span class="hotel-name">xx酒店</span>
+                            </p>
+                            <div class="map">
+                                map
+                            </div>
+                        </div>
+                    </li>
+                    <li class="no-travel visible">
+                        小主还木有行程呢(๑ŐдŐ)b
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 回到顶部和提建议 -->
+    <div class="top-suggest">
+        <div class="top"></div>
+        <a href="./suggest.html" class="suggest">建议反馈</a>
+    </div>
+</body>
+</html>
