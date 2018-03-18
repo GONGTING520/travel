@@ -1,0 +1,115 @@
+.container {
+    display: flex;
+}
+
+/* 左侧列表开始 */
+
+.container .left {
+    width: 0;
+    flex-grow: 1;
+}
+
+.container .list {
+    border-top: 2px solid #2577e3;
+    border-bottom: 2px solid #2577e3;
+    border-right: 1px solid #ececec;
+    background-color: #f7f7f7;
+    font-family: microsoft yahei;
+    color: #333;
+    margin-right: 20px;
+    padding: 10px 0;
+}
+
+.left ul {
+    padding: 10px 0;
+}
+
+.left ul li {
+    border-left: 5px solid transparent;
+    cursor: pointer;
+    padding: 20px 30px;
+    color: #333333;
+}
+
+.left .travel-way li {
+    padding: 0;
+}
+
+.left .travel-way a {
+    display: block;
+    color: #333;
+    padding: 20px 30px;
+}
+
+.left ul .selected {
+    background: #fff;
+    border-left-color: #2577e3;
+}
+
+.left .title {
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+}
+
+/* 左侧列表结束 */
+
+/* 右侧表格开始 */
+
+.container .right {
+    width: 0;
+    flex-grow: 5;
+}
+
+.right .title {
+    width: 100%;
+    background-color: #f6f6f6;
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding: 6px 0;
+}
+
+.table-info li {
+    border: 1px solid #bed3ee;
+    margin-bottom: 10px;
+}
+
+.table-info h3 {
+    font-weight: normal;
+    color: #333;
+    background-color: #eaf2fe;
+    padding-left: 10px;
+    padding-top: 6px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.table-info .table-content {
+    width: 100%;
+    text-align: center;
+}
+
+.table-info .table-content tr {
+    height: 60px;
+}
+
+.table-info .table-content .sum-price {
+    color: #e56700;
+    font-weight: bolder;
+}
+
+.table-content .comment a {
+    color: #0066cc;
+}
+
+.table-content .comment a:hover {
+    text-decoration: underline;
+}
+
+.title .name {
+    padding-left: 10px;
+    width: 180px;
+}
+
+/* 右侧表格结束 */
