@@ -59,6 +59,7 @@
 .container .right {
     width: 0;
     flex-grow: 5;
+    position: relative;
 }
 
 .right .title {
@@ -110,6 +111,20 @@
 .title .name {
     padding-left: 10px;
     width: 180px;
+}
+
+.right .no-info {
+    display: none;
+    background: url(../img/loading.gif) no-repeat #ededed center;
+    position: absolute;
+    top: 42px;
+    right: 0;
+    width: 100%;
+    height: 300px;
+}
+
+.right .visible {
+    display: block;
 }
 
 /* 右侧表格结束 */
