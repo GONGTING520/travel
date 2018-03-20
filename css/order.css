@@ -1,0 +1,169 @@
+.container {
+    display: flex;
+}
+
+/* 左侧预订信息部分开始 */
+
+.container .left {
+    flex-grow: 3;
+    margin-right: 20px;
+    width: 0;
+    position: relative;
+}
+
+.left .hotel-title {
+    margin: 10px 0 15px;
+    color: #1868bd;
+    text-indent: 2px;
+}
+
+.container .left table {
+    width: 100%;
+    border: 1px solid #D7E8F5;
+    border-collapse: collapse;
+}
+
+.container .left .title {
+    background-color: #fff;
+    width: 84px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid #D7E8F5;
+    padding: 22px 0 0 16px;
+    color: #666;
+}
+
+.container .left td {
+    padding: 16px 20px 20px;
+    border-bottom: 1px solid #D7E8F5;
+    background-color: #eff6fc;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.container .left td p {
+    padding: 10px 0;
+}
+
+.left .date-info .date-in,
+.left .date-info .date-out {
+    padding: 0 10px;
+}
+
+.left td input {
+    width: 240px;
+    height: 24px;
+}
+
+.left td input[name="bill"] {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.left .rooms-number span {
+    color: #333;
+    font-size: 14px;
+}
+
+.left .rooms-number .all-room-price {
+    color: #FF6600;
+    font-weight: bold;
+}
+
+.left .sub {
+    display: block;
+    background-color: #ffb000;
+    width: 200px;
+    margin: 80px auto;
+    padding: 0 20px;
+    height: 37px;
+    border: 1px solid #e77c00;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 1px 0 rgba(153, 153, 153, 0.7);
+    outline: none;
+}
+
+.left .sub:hover {
+    background-color: #ff8400;
+    border-color: #de7800;
+}
+
+.left .rechoose {
+    position: absolute;
+    bottom: 86px;
+    left: 0;
+    color: #0066cc;
+}
+
+.left .rechoose:hover {
+    text-decoration: underline;
+}
+
+/* 左侧预订信息部分结束 */
+
+/* 右侧酒店信息部分开始 */
+
+.container .right {
+    flex-grow: 1;
+    width: 0;
+}
+
+.right .hotel-info {
+    border: 1px solid #d7e8f5;
+}
+
+.right .hotel-info h2 {
+    font-size: 18px;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 15px;
+    background-color: #eff6fc;
+}
+
+.right .hotel-info .info-text {
+    padding: 15px;
+}
+
+.hotel-info .info-text img {
+    width: 100px;
+    height: 100px;
+    float: left;
+    border-radius: 5px;
+}
+
+.hotel-info .info-text .info-text-right {
+    margin-left: 110px;
+    font-size: 14px;
+    height: 100px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.hotel-info .info-text .name {
+    margin-bottom: 20px;
+}
+
+.hotel-info .info-text li {
+    padding: 5px 0;
+    font-size: 12px;
+}
+
+.hotel-info .info-text .title {
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.hotel-info .info-text .price {
+    display: inline-block;
+    height: 39px;
+    line-height: 39px;
+    color: #FF6600;
+    font-size: 36px;
+}
+
+/* 右侧酒店信息部分结束 */
