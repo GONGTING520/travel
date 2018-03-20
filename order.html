@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>预定酒店</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/order.css">
+</head>
+<body>
+    <!-- logo标题 -->
+    <div class="header center clearfix">
+        <div class="logo"></div>旅游网
+        <div class="login visible">
+            <a href="./login.html?id=1">登陆</a>|<a href="./login.html?id=0">注册</a>
+        </div>
+        <div class="user">
+            <a href="./order-center.html">xx</a>
+            <a href="./recommend.html" class="out">退出</a>
+        </div>
+    </div>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <ul class="center clearfix">
+            <!-- <li><a href="./recommend.html">推荐路线</a></li> -->
+            <li class="selected"><a href="#">酒店</a></li>
+            <li><a href="#">旅游景点</a></li>
+        </ul>
+    </div>
+    <div class="container center">
+        <!-- 左侧订单详情 -->
+        <div class="left">
+            <h2 class="hotel-title">哈尔滨华特酒店</h2>
+            <form action="" method="">
+                <table>
+                    <tr class="order-info">
+                        <th class="title">预订信息</th>
+                        <td>
+                            <p class="date-info">
+                                入离日期：<span class="date-in">2018-02-16</span>至<span class="date-out">2018-02-17</span>
+                                &nbsp;<span class="date-num">1</span>晚
+                            </p>
+                            <p class="rooms-number">房间数量
+                                <select name="rooms">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                                <span>房费¥<span class="all-room-price">389</span></span>
+                            </p>
+                            <p class="customs-name">住客姓名
+                                <input type="text" placeholder="住客姓名（中文/英文） （必填）">
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="connecion-info">
+                        <th class="title">联系信息</th>
+                        <td>
+                            <p>手机号码
+                                <input type="text" name="tel" placeholder="请输入能联系到您的手机号码">
+                            </p>
+                            <p>电子邮箱
+                                <input type="email" name="email" placeholder="请输入您的email邮箱">
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="bills">
+                        <th class="title">发票信息</th>
+                        <td>
+                            <input type="checkbox" name="bill">需要发票
+                        </td>
+                    </tr>
+                    <tr class="tips">
+                        <th class="title">酒店提示</th>
+                        <td>
+                            <p>根据《哈尔滨市公共场所控制吸烟条例》，从2017年3月1日起，酒店不能安排吸烟房，并禁止在酒店室内区域吸烟。该酒店的入住时间为14:00，退房标准结算时间为12:00。如提前入住或推迟离店，均须酌情加收一定的费用。</p>
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" class="sub" value="提  交">
+                <a class="rechoose" href="./hotel-info.html">&lt;&nbsp;重新选择房型</a>
+            </form>
+        </div>
+        <!-- 右侧酒店信息 -->
+        <div class="right">
+            <div class="hotel-info">
+                <h2>您的选择</h2>
+                <div class="info-text clearfix">
+                    <img src="img/hotel_pic1.jpg" alt="xxx">
+                    <div class="info-text-right">
+                        <p class="name">哈尔滨华特酒店</p>
+                        <p>哈尔滨市xxx区xxx街道xxx号</p>
+                    </div>
+                    <ul>
+                        <li class="title">标准间</li>
+                        <li>床型：<span>2张单人床</span></li>
+                        <li>楼层：<span>5-15层</span></li>
+                        <li>面积：<span>26</span>平方米</li>
+                        <li>带宽：<span>全部房间支持免费有线宽带上网</span></li>
+                        <li>订单总金额：<span class="price">389</span>元</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 回到顶部和提建议 -->
+    <div class="top-suggest">
+        <div class="top"></div>
+        <a href="./suggest.html" class="suggest">建议反馈</a>
+    </div>
+</body>
+</html>
