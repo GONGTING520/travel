@@ -26,11 +26,11 @@ li {
 /* logo部分开始 */
 
 .header {
-    padding: 0 60px;
     height: 65px;
     line-height: 65px;
     color: #2577e3;
     font-weight: bold;
+    position: relative;
 }
 
 .header .logo {
@@ -42,7 +42,9 @@ li {
 
 .header .login,
 .header .user {
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 10px;
     display: none;
 }
 
