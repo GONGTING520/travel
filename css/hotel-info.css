@@ -1,0 +1,181 @@
+.container {
+    display: flex;
+}
+
+/* 左侧酒店房间信息部分开始 */
+
+.container .left {
+    flex-grow: 7;
+    width: 0;
+    margin-right: 40px;
+}
+
+.left .title {
+    margin: 10px 0;
+    color: #06c;
+}
+
+/* 左侧酒店图片部分 */
+
+.left .pic {
+    margin-bottom: 20px;
+}
+
+.left .pic div {
+    float: left;
+    background: url() no-repeat center/cover;
+}
+
+.left .pic .border-left {
+    margin-left: 10px;
+}
+
+.left .pic .border-bottom {
+    margin-bottom: 10px;
+}
+
+.left .pic .pic-1 {
+    width: 100px;
+    height: 109px;
+}
+
+.left .pic .pic-2 {
+    width: 246px;
+    height: 109px;
+}
+
+.left .pic .pic-4 {
+    width: 290px;
+    height: 228px;
+}
+
+.room-model {
+    border-collapse: collapse;
+    text-align: center;
+    color: #333;
+    width: 99%;
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.room-model thead tr {
+    height: 50px;
+}
+
+.room-model tr {
+    border: 1px solid #ccc;
+}
+
+.room-model tbody td img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.room-model .room-img {
+    border: 1px solid #ccc;
+    width: 200px;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.room-img .room-img-desc {
+    margin-left: 8px;
+}
+
+.room-model .order,
+.room-model .sell-out {
+    display: none;
+    width: 60px;
+    height: 26px;
+    margin: 0 auto;
+    line-height: 26px;
+    border: solid 1px #e77c00;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 1px 0 rgba(95, 50, 0, 0.7);
+    border-radius: 3px;
+    text-shadow: 1px 1px 0 #cf7000;
+    background-color: #ffb000;
+}
+
+.room-model .visible {
+    display: block;
+}
+
+.room-model .order:hover,
+.room-model .sell-out:hover {
+    background-color: #e98b20;
+}
+
+/* 左侧酒店房间信息部分结束 */
+
+/* 右侧地图和附近美食部分开始 */
+
+.container .right {
+    flex-grow: 2;
+    width: 0;
+}
+
+.right .map {
+    border: 1px solid rgb(243, 241, 236);
+    overflow: hidden;
+    width: 100%;
+    height: 222px;
+    background-color: rgb(243, 241, 236);
+    margin-bottom: 10px;
+}
+
+.right .food {
+    padding: 16px 14px 8px;
+    background: #f1f1f1;
+}
+
+.right .foods li {
+    padding: 10px 0;
+    height: 72px;
+    border-top: 1px dashed #ccc;
+}
+
+.right .foods li:first-child {
+    border-top: none;
+}
+
+.right .foods .food-right {
+    margin-left: 73px;
+}
+
+.right .foods li img {
+    float: left;
+    width: 62px;
+    height: 62px;
+    border-radius: 3px;
+}
+
+.food-right .food-name {
+    margin-bottom: 5px;
+    height: 36px;
+}
+
+.food-right .food-price {
+    color: #666;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.food-right .food-price .price {
+    margin: 0 4px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f60;
+}
+
+.food-right .food-price .sell {
+    float: right;
+    margin-right: 10px;
+}
+
+/* 右侧地图和附近美食部分结束 */
