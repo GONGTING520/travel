@@ -1,0 +1,18 @@
+.right {
+    background: #fff;
+    padding-bottom: 50px;
+}
+
+.details {
+    float: left;
+    width: 440px;
+    margin-right: 50px;
+}
+
+.details .content {
+    width: 340px;
+}
+
+.content .map {
+    width: 340px;
+}
